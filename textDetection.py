@@ -11,6 +11,8 @@ img = cv2.imread('t1.png')
 # pytesseract accepts RGB value and opencv is in BGR so converting image into RGB
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
+# fetching text from the image
+print(pytesseract.image_to_string(img))
 
 # showing image and creating wait key to infinity until close button is clicked
 cv2.imshow('Result', img)
