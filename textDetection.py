@@ -6,7 +6,7 @@ import pytesseract
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
 # reading image
-img = cv2.imread('t2.png')
+img = cv2.imread('t5.jpg')
 
 # pytesseract accepts RGB value and opencv is in BGR so converting image into RGB
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
